@@ -69,6 +69,7 @@ a {
   text-decoration: none;
 }
 h1 {
+    text-align: center;
     letter-spacing: var(--spacing);
     line-height: 1.25;
     margin-bottom: 0.75rem;

@@ -1,11 +1,13 @@
-const colors = [`Red`, `Blue`, `Yellow`, `Purple`, `Green`]
+const colors = [`Red`, `Blue`, `Yellow`, `Purple`, `Green`, `Black`]
 const btn = document.getElementById(`btn`)
+const color = document.querySelector(`.color`)
 
 btn.addEventListener(`click`, function(){
-    document.body.style.background = colors[getRandomColorsIndex()]
-    //document.getElementById()
+    const randomColor = getRandomColor()
+    document.body.style.background = randomColor
+    color.textContent = randomColor
 })
 
-function getRandomColorsIndex() {
-    return Math.floor(Math.random() * colors.length)
+function getRandomColor() {
+    return colors[Math.floor(Math.random() * colors.length)]
 }
